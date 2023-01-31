@@ -1,0 +1,10 @@
+name: 'Proofread PRs'
+description: 'Automatically spots spelling and grammar mistakes in PRs and requests changes'
+inputs:
+  pr:
+    description: 'ID of the Pull Request to proofread'
+    required: true
+outputs:
+runs:
+  using: 'node16'
+  main: 'index.js'
